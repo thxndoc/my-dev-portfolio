@@ -1,0 +1,78 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    :root {
+        --text-color: #202020;
+        --hover: #4d30ab;
+    }
+    
+    h1, h2, h3, h4, 
+    h5, h6, p, a, i {
+        color: var(--text-color);
+        font-family: Nunito, sans-serif;
+    }
+    
+    /*************Styling for body. Display flex used to ensure footer stays at the bottom***********/
+    body {
+        display: flex;
+        flex-direction: column;
+        background-color: #f7f7f5;
+        margin: 4.5em 4em 0 4em;
+    }
+    
+    /********************************Styling for header & navbar*************************************/
+    .nav-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80px;
+        z-index: 999;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        background-color: #f7f7f5;
+        padding: 0 2em;
+        box-shadow: 0.5px 0.5px 1px #727272;
+    }
+    .logo img {height: 50px;}
+    .menu {display: flex;}
+    .menu li {padding-left: 1em;}
+    .menu li a {
+        font-size: 1.125rem;
+        font-weight: 600;
+        display: inline-block;
+        text-decoration: none;
+        color: var(--text-color);
+        text-align: center;
+        transition: all 0.3s;
+        position: relative;
+        text-transform: uppercase;
+    }
+    
+    .menu li a:hover {color: var(--hover);}
+    .open-menu , .close-menu {
+        position: absolute;
+        color: var(--color1);
+        cursor: pointer;
+        font-size: 1.5rem;
+        display: none;
+    }
+    .open-menu {
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+    }
+    .close-menu {
+        top: 20px;
+        right: 20px;
+    }
+    #check {display: none;}
+        
