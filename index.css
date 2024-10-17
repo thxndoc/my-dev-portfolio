@@ -76,3 +76,19 @@
     }
     #check {display: none;}
     
+/*******************************Styling for about me section***************************************/
+.about-me {
+    margin: 2em 0em;
+}
+
+.about-me p {
+    font-size: 1.125rem;
+}
+
+.about-me img {
+    height: 65px;
+}
+
+.h2 {
+    margin: 1em 0 0.25em 0;
+}
