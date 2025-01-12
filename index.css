@@ -120,7 +120,8 @@
     margin-top: 1em;
 }
 
-.project.card-3 {
+.project.card-3,
+.project.card-4 {
     margin-top: 0;
 }
 
